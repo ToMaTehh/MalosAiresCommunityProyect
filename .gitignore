@@ -24,10 +24,10 @@ pawn.lock
 server.cfg
 
 # database and server settings
-#scriptfiles/
+scriptfiles/
 
 # Plugins directory
-#plugins/
+plugins/
 
 # binaries
 *.exe
