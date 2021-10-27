@@ -1,35 +1,57 @@
-!Build/
-.last_cover_stats
-/META.yml
-/META.json
-/MYMETA.*
-*.o
-*.pm.tdy
-*.bs
+#
+# Package only files
+#
 
-# Devel::Cover
-cover_db/
+# Compiled Bytecode, precompiled output and assembly
+*.amx
+*.lst
+*.asm
 
-# Devel::NYTProf
-nytprof.out
+# Vendor directory for dependencies
+dependencies/
 
-# Dizt::Zilla
-/.build/
+# Dependency versions lockfile
+pawn.lock
 
-# Module::Build
-_build/
-Build
-Build.bat
+#
+# Server/gamemode related files
+#
 
-# Module::Install
-inc/
+# compiled settings file
+# keep `samp.json` file on version control
+# but make sure the `rcon_password` field is set externally
+# you can use the environment variable `SAMP_RCON_PASSWORD` to do this.
+server.cfg
 
-# ExtUtils::MakeMaker
-/blib/
-/_eumm/
-/*.gz
-/Makefile
-/Makefile.old
-/MANIFEST.bak
-/pm_to_blib
-/*.zip
+# database and server settings
+#scriptfiles/
+
+# Plugins directory
+#plugins/
+
+# binaries
+*.exe
+*.dll
+!*/*.dll
+*.so
+!*/*.so
+announce
+samp03svr
+samp-npc
+
+# logs
+logs/
+*.txt
+!*/*.txt
+
+# Ban list
+samp.ban
+
+#
+# Common files
+#
+
+*.sublime*
+
+# VS Code
+*.vscode

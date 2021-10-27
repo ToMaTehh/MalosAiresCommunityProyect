@@ -1,0 +1,54 @@
+{
+	"user": "Malos Aires Community",
+	"repo": "MalosAiresCommunityProyect",
+	"entry": "gamemodes/marp_core.pwn",
+	"output": "gamemodes/marp_core.amx",
+	"local": true,
+	"dependencies": [
+		"sampctl/samp-stdlib",
+		"pBlueG/SA-MP-MySQL:R41-4",
+		"samp-incognito/samp-streamer-plugin:v2.9.4",
+		"Y-Less/sscanf:2.10.2-r2",
+		"IllidanS4/PawnPlus:v1.3.2",
+		"pawn-lang/YSI-Includes@5.x",
+		"Southclaws/zcmd",
+		"Awsomedude/easyDialog"
+	],
+	"build": {
+		"version": "3.10.10",
+		"args": ["-;+", "-(+", "-\\+", "-t4", "-d2", "-O1", "-Z+"],
+		"includes": ["./include/"]
+	},
+	"runtime": {
+		"mode": "server",
+		"gamemodes": ["marp_core"],
+		"password": "mypassword",
+		"rcon": false,
+		"rcon_password": "mypassword",
+		"gamemodetext": "MA:RP-Community v1.0.0",
+		"mapname": "Malos Aires",
+		"weburl": "https://discord.gg/4BjFyQs7B3",
+		"plugins": ["crashdetect", "cstl"],
+		"announce": false,
+		"query": true,
+		"logtimeformat": "[%d/%m/%Y %H:%M:%S]",
+		"chatlogging": false,
+		"stream_distance": 300.0,
+		"maxnpc": 0,
+		"extra": {
+			"crashdetect_log": "logs/crashdetect.log"
+		}
+	},
+	"runtimes": [
+		{
+			"name": "invalid",
+			"rcon_password": "changeme",
+			"maxplayers": -1
+		},
+		{
+			"name": "test",
+			"port": 7777,
+			"maxplayers": 20
+		}
+	]
+}
